@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Disaster Analytics Report</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header { 
+            background: #2c3e50; 
+            color: white; 
+            padding: 30px; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section { 
+            background: white; 
+            padding: 25px; 
+            margin-bottom: 20px;
+        }
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 10px;
+        }
+        img { 
+            width: 100%; 
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+        .description { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            margin: 10px 0;
+        }
+        ul { line-height: 1.8; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 15px 0;
+        }
+        th { 
+            background: #34495e; 
+            color: white; 
+            padding: 10px;
+        }
+        td { 
+            padding: 10px; 
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🌍 Global Disaster Analytics Report</h1>
+    <p>Analysis of Natural Disasters (1900-2024)</p>
+    <p>Author: Demian Pyrih | October 2025</p>
+</div>
+
+<div class="section">
+    <h2>📊 Summary</h2>
+    <p><strong>3,495</strong> disasters analyzed | <strong>713,927</strong> deaths | <strong>101.9M</strong> people affected | <strong>$56.7B</strong> damage</p>
+</div>
+
+<div class="section">
+    <h2>🔥 Key Findings</h2>
+    <ul>
+        <li>Disaster frequency shows significant variation across decades</li>
+        <li>Asia experiences 58% of all global disasters</li>
+        <li>Economic damages correlate with time (r=0.02)</li>
+        <li>Machine Learning models identify patterns in disaster types</li>
+        <li>Average 204 deaths per disaster event</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>📈 Disaster Frequency Over Time</h2>
+    <img src="../visualizations/GDF(1900-2024).png" alt="Frequency">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Clear upward trend from 1900 to 2024</li>
+            <li>Sharp increase after 1950s</li>
+            <li>Climate change impact visible</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>💀 Deaths from Disasters per Year</h2>
+    <img src="../visualizations/TDfDpY.png" alt="Deaths">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>High year-to-year variation</li>
+            <li>Certain years show extreme spikes</li>
+            <li>Deaths not linearly increasing despite more disasters</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🌪️ Distribution of Disaster Types</h2>
+    <img src="../visualizations/DofDT(1900-2024).png" alt="Types">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Floods and storms dominate</li>
+            <li>Majority are weather/climate-related</li>
+            <li>Earthquakes less frequent but deadly</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📊 Disaster Metrics Over Time</h2>
+    <img src="../visualizations/DMOT(1900-2024).png" alt="Multi-metric">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Frequency: Steady increase</li>
+            <li>Deaths: High variability</li>
+            <li>Affected: More people impacted in recent decades</li>
+            <li>Damage: Economic losses accelerating</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📅 Disasters by Decade</h2>
+    <img src="../visualizations/DbyD.png" alt="Decade">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Exponential growth each decade</li>
+            <li>2000s-2020s show massive increase</li>
+            <li>Early 1900s had fewer recorded events</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🌡️ Climate Change Effect (Last 50 Years)</h2>
+    <img src="../visualizations/CCEL50Y.png" alt="Climate">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Clear acceleration in all metrics</li>
+            <li>Dramatic frequency increase</li>
+            <li>Exponential damage growth</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🌍 Disasters by Continent</h2>
+    <img src="../visualizations/DbyC.png" alt="Continent">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Asia dominates with 58% of disasters</li>
+            <li>Population density affects counts</li>
+            <li>Oceania has fewest disasters</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔥 Country Heatmap</h2>
+    <img src="../visualizations/DTbyT15AC.png" alt="Heatmap">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Each country has unique disaster profile</li>
+            <li>China, India, Philippines highly disaster-prone</li>
+            <li>Coastal countries face more storms</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📊 Impact by Continent</h2>
+    <img src="../visualizations/DIbyC.png" alt="Impact">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Asia has highest death toll</li>
+            <li>Massive populations impacted in Asia</li>
+            <li>Economic losses concentrated in Asia</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📋 Geographic Distribution</h2>
+    <table>
+        <tr>
+            <th>Continent</th>
+            <th>Disasters</th>
+            <th>Deaths</th>
+            <th>Damage ($M)</th>
+        </tr>
+        <tr><td>Asia</td><td>2,028</td><td>356,156</td><td>$35,688,447</td></tr>
+        <tr><td>Africa</td><td>440</td><td>189,720</td><td>$5,251,661</td></tr>
+        <tr><td>North America</td><td>434</td><td>89,592</td><td>$5,949,634</td></tr>
+        <tr><td>Europe</td><td>303</td><td>45,062</td><td>$5,374,270</td></tr>
+        <tr><td>Oceania</td><td>168</td><td>19,708</td><td>$1,890,252</td></tr>
+        <tr><td>South America</td><td>122</td><td>13,689</td><td>$2,573,267</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>📊 Stacked Disaster Types by Continent</h2>
+    <img src="../visualizations/DTbyC.png" alt="Stacked">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Each continent has characteristic disaster mix</li>
+            <li>Floods most common across all regions</li>
+            <li>Disaster types reflect climate/geography</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🤖 ML Feature Importance (Classification)</h2>
+    <img src="../visualizations/FI.png" alt="Features">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Geographic and temporal features most important</li>
+            <li>Impact metrics help classify disaster types</li>
+            <li>ML successfully learns patterns</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🎯 Confusion Matrix</h2>
+    <img src="../visualizations/CM.png" alt="Matrix">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Diagonal values = correct predictions</li>
+            <li>Off-diagonal = misclassifications</li>
+            <li>Visual representation of model accuracy</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📈 Actual vs Predicted Deaths</h2>
+    <img src="../visualizations/AvsPD.png" alt="Predictions">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Red diagonal = perfect prediction line</li>
+            <li>Points closer to line = better predictions</li>
+            <li>Comparing Random Forest vs XGBoost</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔍 Feature Importance (Regression)</h2>
+    <img src="../visualizations/FI(RF).png" alt="Regression">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Features that best predict death toll</li>
+            <li>Affected people = strong predictor</li>
+            <li>Location impacts casualty rates</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔗 Correlation Matrix</h2>
+    <img src="../visualizations/CMatrix.png" alt="Correlation">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Red = positive correlation</li>
+            <li>Blue = negative correlation</li>
+            <li>Reveals relationships between metrics</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>☠️ Top 10 Deadliest Disasters</h2>
+    <img src="../visualizations/T10DD(1900-2024).png" alt="Deadliest">
+    <div class="description">
+        <strong>What this shows:</strong>
+        <ul>
+            <li>Catastrophic events that shaped history</li>
+            <li>Most in developing regions</li>
+            <li>Mix of floods, earthquakes, storms</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🛠️ Technologies Used</h2>
+    <p><strong>Languages:</strong> Python 3.11</p>
+    <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, XGBoost, Plotly, Matplotlib, Seaborn</p>
+    <p><strong>Techniques:</strong> EDA, Time Series Analysis, Machine Learning, Statistical Analysis</p>
+</div>
+
+<div class="section">
+    <h2>📊 Model Performance</h2>
+    <p><strong>Classification:</strong> Random Forest - 14.4% accuracy</p>
+    <p><strong>Regression:</strong> Best R² = -0.064 (Random Forest)</p>
+    <p><strong>Note:</strong> Low scores demonstrate complexity of predicting natural disasters</p>
+</div>
+
+<div class="header">
+    <p>Created by Demian Pyrih | October 2025</p>
+    <p>Data Science Portfolio Project</p>
+</div>
+
+</body>
+</html>
